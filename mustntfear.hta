@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Must Not Fear</title>
+  
+  <HTA:APPLICATION
+		APPLICATIONNAME="Fear"
+		SCROLL="no"
+		>
+</head>
+
+<script language="VBScript">
+	Sub Window_OnLoad
+		MustntFear
+		Self.close
+	End Sub
+	
+	Sub MustntFear
+		msgBox "I must not fear.  Fear is the mind-killer.  Fear is the little death that brings total obliteration."&_
+			vbcrlf & "I will face my fear.  I will permit it to pass over me and through me.  And when it has gone past "&_
+			vbcrlf & "I will turn the inner eye to see its path.  Where the fear has gone there will be nothing."&_
+			vbcrlf & "Only I will remain."& vbcrlf &_
+			vbcrlf & vbtab & "- Bene Gesserit Litany Against Fear (Dune, Frank Herbert, 1965)",vbinformation,"Must Not Fear"
+	End Sub
+</script>
+
+<body style="font-family: Arial,Helvetica,sans-serif">
+<p><button onclick="MustntFear">Do Not Fear</button></p>
+</body>
+</html>
